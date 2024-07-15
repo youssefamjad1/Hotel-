@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Reservation</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Add custom CSS styles here */
+    .form-container {
+      max-width: 400px;
+      margin: auto;
+      margin-top: 50px;
+    }
+    .form-container form {
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-container h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <%- include('../partials/header.ejs'); -%>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 form-container">
+      <h2>Sign In</h2>
+      <form id="signInForm" action="/login" method="POST">
+        <div class="form-group">
+          <label for="emailSignIn">Email address</label>
+          <input type="email" name="username" class="form-control" id="emailSignIn" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="passwordSignIn">Password</label>
+          <input type="password" name="password"class="form-control" id="passwordSignIn" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+      </form>
+    </div>
+    <div class="col-md-6 form-container">
+      <h2>Sign Up</h2>
+      <form id="signUp" action="/register"  method="POST">
+        <div class="form-group">
+          <label for="emailSignUp">Email address</label>
+          <input type="email" name="username" class="form-control" id="emailSignUp" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="telephoneSignUp">Telephone</label>
+          <input type="tel" name="telephone" class="form-control" id="telephoneSignUp" placeholder="Enter telephone">
+        </div>
+        <div class="form-group">
+          <label for="passwordSignUp">Password</label>
+          <input type="password" name="password" class="form-control" id="passwordSignUp" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- jQuery for animation -->
+<script>
+ /*$('#signInForm').submit(function(e) {
+  e.preventDefault();
+  var formData = $(this).serialize();
+  $.post('/login', formData)
+    .done(function(response) {
+      // Handle successful login (e.g., redirect to /hotel)
+      window.location.href = '/hotel';
+    })
+    .fail(function(error) {
+      // Handle login failure (e.g., display error message)
+      alert('Login failed. Please try again.');
+    });
+});*/
+
+</script>
+<%- include('../partials/footer.ejs'); -%>
+</body>
+</html>
+
+
+
+
+

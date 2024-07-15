@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+  
+</head>
+<body>
+    <!-- Include Header -->
+    <%- include('../partials/header.ejs'); -%>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-image" >
+
+            <div class="hero-text">
+                <h1>Welcome to Hotel Reservation</h1>
+                <p>Book your stay now!</p>
+                <a href="/book-now" class="btn btn-primary btn-lg">Book Now</a>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="mt-5">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget turpis at risus pretium consequat. In porttitor sem id sollicitudin fermentum. Sed sit amet dictum ligula. Nunc finibus sapien non quam congue, ac cursus orci laoreet. Nam pretium orci nec nunc facilisis hendrerit. Cras eleifend fringilla purus et pellentesque. </p>
+        </div>
+    </div>
+
+    <!-- Include Footer -->
+    <%- include('../partials/footer.ejs'); -%>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
